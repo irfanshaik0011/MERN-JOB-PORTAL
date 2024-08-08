@@ -8,9 +8,7 @@ console.log(process.env.DB_PASSWORD);
 
 // middleware
 app.use(express.json());
-app.use(cors({
-  origin: 'https://mern-job-portal-frontend-jl0p.onrender.com/'
-}));
+app.use(cors());
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@job-portal-demo.vpurx8c.mongodb.net/?retryWrites=true&w=majority&appName=job-portal-demo`;
