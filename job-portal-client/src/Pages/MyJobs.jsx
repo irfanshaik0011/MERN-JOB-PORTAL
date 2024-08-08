@@ -11,7 +11,7 @@ const MyJobs = () => {
     const itemsPerPage = 4;
     useEffect(() => {
         setIsLoading(true);
-        fetch(`http://localhost:3000/myJobs/shaikirfanib123@gmail.com`)
+        fetch(`http://https://mern-job-portal-backend-vjwg.onrender.com/myJobs/shaikirfanib123@gmail.com`)
         .then(res => res.json())
         .then(data => {
             setJobs(data);
@@ -46,7 +46,7 @@ const MyJobs = () => {
 
     const handleDelete = (id) => {
       //  console.log(id)
-        fetch(`http://localhost:3000/job/${id}`, {
+        fetch(`http://https://mern-job-portal-backend-vjwg.onrender.com/job/${id}`, {
             method: "DELETE"
         })
         .then(res => res.json)
