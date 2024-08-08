@@ -1,0 +1,22 @@
+.job-details {
+    margin-top: 2rem;
+}
+
+.job-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.job-meta {
+    display: flex;
+    gap: 1rem;
+}
+
+.job-content {
+    margin-top: 1rem;
+}
+
+.job-benefits, .job-outline, .job-future {
+    margin-bottom: 1.5rem;
+}
