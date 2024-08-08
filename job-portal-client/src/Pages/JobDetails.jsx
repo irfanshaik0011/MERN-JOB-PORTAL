@@ -8,7 +8,7 @@ const JobDetails = () => {
     const [job, setJob] = useState(null); // Initialize job as null to handle loading state
 
     useEffect(() => {
-        fetch(`http://https://mern-job-portal-backend-vjwg.onrender.com/all-jobs/${id}`)
+        fetch(`http://localhost:3000/all-jobs/${id}`)
             .then(res => res.json())
             .then(data => setJob(data))
             .catch(error => console.error('Error fetching job details:', error));

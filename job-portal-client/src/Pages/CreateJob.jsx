@@ -13,7 +13,7 @@ const CreateJob = () => {
   const onSubmit = (data) => {
     data.skills = selectedOption;
     console.log(data);
-    fetch("http://https://mern-job-portal-backend-vjwg.onrender.com/post-job",{
+    fetch("http://ost:3000localh/post-job",{
       method: "POST",
       headers: {"content-type" : "application/json"},
       body: JSON.stringify(data)
